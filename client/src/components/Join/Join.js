@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import "./Join.css";
+import JoinStatement from "../JoinStatement/JoinStatement";
 
 const Join = () => {
   const [name, setName] = useState("");
@@ -10,6 +10,7 @@ const Join = () => {
   return (
     <div className="joinOuterContainer">
       <div className="joinInnerCointainer">
+        <JoinStatement />
         <h1 className="heading">Join</h1>
         <div>
           <input
